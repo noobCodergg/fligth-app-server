@@ -20,7 +20,7 @@ app.use(cors({
     methods:["POST","GET","PUT","DELETE"],
     credentials:true
 }))
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req, res) => {
   return res.status(200).json({
     success: true,
     message: 'Welcome to Merchant App Server',
