@@ -45,6 +45,7 @@ exports.login = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       secure:true,
+      sameSite:none,
       maxAge: parseInt(process.env.COOKIE_EXPIRES_IN),
     });
     if(user.role==="User"){
