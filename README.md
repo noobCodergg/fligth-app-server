@@ -56,6 +56,8 @@ Features:
  6. update booking according to flight update
  7. delete a booking according to flight deletion
  8. log in, log out, admin authentication
+ 9. version controlled
+ 10. responsive (without navigation menu)
 
 #Default Admin Credentials
 email: muntasirniloy2002@gmail.com
