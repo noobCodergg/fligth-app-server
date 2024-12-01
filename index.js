@@ -21,9 +21,9 @@ app.use(cors({
     credentials:true
 }))
 
-app.use("fligth-app-server.vercel.app/api/auth", authRoutes);
-app.use("fligth-app-server.vercel.app/api/flight",flightRoutes)
-app.use("fligth-app-server.vercel.app/api/user",userRoutes)
+app.use("/api/auth", authRoutes);
+app.use("/api/flight",flightRoutes)
+app.use("/api/user",userRoutes)
 // Start server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
