@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:'flight-app-frontend-beta.vercel.app',
+    origin:'https://peaceful-tapioca-670ae1.netlify.app/',
     methods:["POST","GET","PUT","DELETE"],
     credentials:true
 }))
