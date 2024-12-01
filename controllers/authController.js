@@ -44,6 +44,7 @@ exports.login = async (req, res) => {
     // Set cookie
     res.cookie("token", token, {
       httpOnly: true,
+      secure:true,
       maxAge: parseInt(process.env.COOKIE_EXPIRES_IN),
     });
     if(user.role==="User"){
